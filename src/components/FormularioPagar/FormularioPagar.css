@@ -1,0 +1,73 @@
+.formulario-pagar {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.formulario-pagar .formulario-pagar-titulo {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formulario-pagar .formulario-pagar-titulo h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.contenedor-resultado {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+.contenedor-resultado span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+}
+
+.contenedor-boton-pagar {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.contenedor-descripcion-imagen {
+  width: 100%;
+  display: flex;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.contenedor-descripcion-imagen img {
+  width: 100%;
+}
+
+.contenedor-boton-ayuda {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+}
+
+.contenedor-boton-ayuda button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}

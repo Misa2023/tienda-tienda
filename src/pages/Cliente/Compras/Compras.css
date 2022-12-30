@@ -1,0 +1,74 @@
+.contenedor-pedido {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 24px;
+}
+
+.titulo-pedido {
+  background-color: #f7f7f7;
+  padding: 12px;
+  margin-right: -4px;
+  margin-left: -4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-pedido p,
+.productos-pedido p {
+  font-weight: 400;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.titulo-pedido span,
+.productos-pedido span {
+  padding: 0 8px;
+}
+
+.titulo-pedido > div,
+.productos-pedido > div {
+  display: flex;
+  align-items: center;
+}
+
+.titulo-pedido button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.21rem 0.5rem;
+  margin: 0px 5px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 0.25rem;
+}
+
+.productos-pedido {
+  padding: 12px 5px 5px 12px;
+  margin-right: -4px;
+  margin-left: -4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productos-pedido img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.contendor-pdf {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  z-index: 900;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,72 @@
+/************INICIO**************/
+/*COMPONENTE CARD PRODUCTO SOLO*/
+/**************************/
+/*CONTENEDOR*/
+.contenedor-producto {
+  padding: 7px;
+  color: white;
+  max-width: 211px;
+  min-width: 180px;
+  height: 360px;
+  background-color: white;
+  border: 2px solid #e9e8e8;
+}
+.contenedor-producto button {
+  border: 1px solid transparent;
+  display: inline-flex;
+  cursor: pointer;
+  background: none;
+}
+
+/*IMAGEN*/
+.contenedor-producto .contenedor-producto-img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+}
+/*TITULO DE PRODUCTO*/
+.contenedor-producto h2 {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 19px;
+  height: 70px;
+  border-bottom: 1px solid #f4f3f3;
+}
+/*PRECIO DEL PRODUCTO*/
+.contenedor-producto h3 {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  height: 50px;
+  border-bottom: 1px solid #f4f3f3;
+}
+/*COTENEDOR CARRITO Y ESTRELLAS*/
+.contenedor-producto div {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  height: 35px;
+}
+/*COTENEDOR CARRITO*/
+.contenedor-producto div button {
+  font-size: 25px;
+}
+
+/*COTENEDOR ESTRELLAS*/
+.contenedor-producto div div {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.contenedor-producto div p {
+  font-size: 15px;
+}
+
+/************FIN**************/
+/*COMPONENTE CARD PRODUCTO SOLO*/
+/**************************/

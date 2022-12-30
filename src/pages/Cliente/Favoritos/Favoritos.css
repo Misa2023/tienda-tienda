@@ -1,0 +1,35 @@
+.contenedor-productos-favoritos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.producto-favorito {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 200px);
+  gap: 15px;
+  flex: wrap;
+}
+
+@media screen and (max-width: 920px) {
+  .producto-favorito {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  .producto-favorito {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .producto-favorito {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}

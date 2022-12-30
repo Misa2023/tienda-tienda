@@ -1,0 +1,39 @@
+.contenedor-reportes-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 200px);
+  gap: 8px;
+  flex: wrap;
+}
+
+.card-reporte {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-reporte h6,
+.card-reporte h3 {
+  color: white;
+}
+
+.contenedor-reportes-barras {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .contenedor-reportes-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor-reportes-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

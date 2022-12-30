@@ -1,0 +1,71 @@
+.contenedor-select {
+  position: relative;
+}
+
+.ocultar-select {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.contenedor-check {
+  display: none;
+  border: 1px #737373 solid;
+}
+
+.contenedor-check label {
+  display: block;
+}
+
+.contenedor-check label:hover {
+  background-color: #1e90ff;
+}
+
+.contenedor-crear-categorias form h4 {
+  margin-top: 10px;
+}
+.contenedor-crear-categorias form p {
+  font-size: 12px;
+  color: red;
+}
+
+.contenedor-crear-categorias input[type="text"],
+.contenedor-crear-categorias input[type="number"],
+.contenedor-crear-categorias select,
+.contenedor-crear-categorias textarea {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+.contenedor-crear-categorias input[type="text"]:focus,
+.contenedor-crear-categorias input[type="number"],
+.contenedor-crear-categorias textarea:focus {
+  outline: none;
+}
+
+.contenedor-crear-categorias input[type="file"] {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+
+.boton-eliminar {
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

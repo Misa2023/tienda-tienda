@@ -1,0 +1,17 @@
+.grid-personalizar-cliente button {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  color: white;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/*PERSONALIZAR*/
+.contenedor-personalizar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,104 @@
+/** SIDEBAR **/
+.contenedor-sidebar-perfil {
+  background-color: white;
+  top: 143px;
+  /*position: fixed;*/
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: calc(100% - 0%);
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 800;
+  border-right: 1px solid #ccc;
+}
+
+.contenedor-sidebar-perfil.activo {
+  transform: translate(0%);
+}
+/** FIN SIDEBAR **/
+
+/**HIJOS SIDEBAR**/
+.contenedor-sidebar-perfil .contenedor-perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  border-bottom: 1px solid #ccc;
+  margin: 4px 0;
+  padding: 0;
+}
+
+/*SIDEBAR - PROFILE*/
+.contenedor-sidebar-perfil .contenedor-perfil div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /*border: 5px solid #fff;*/
+}
+
+.contenedor-sidebar-perfil .contenedor-perfil div img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/*FIN SIDEBAR - PROFILE*/
+
+/*SIDEBAR - CANDIDATO*/
+.contenedor-rol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  height: 25px;
+}
+
+.contenedor-rol p {
+  font-weight: 500;
+  color: #fff;
+}
+/*FIN SIDEBAR - CANDIDATO*/
+
+/*SIDEBAR - MENU*/
+.navegacion-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.contenedor-navegacion a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 16px;
+}
+
+.contenedor-navegacion a span {
+  margin-left: 10px;
+}
+
+.navegacion-items a img {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contenedor-sidebar-perfil {
+    width: 204px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor-sidebar-perfil {
+    position: fixed;
+    transform: translate(-100%);
+    top: 75px;
+  }
+}

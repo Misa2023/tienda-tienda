@@ -1,0 +1,65 @@
+/*FORM*/
+.contenedor-crear-categorias form h4 {
+  margin-top: 10px;
+}
+
+.contenedor-crear-categorias input[type="text"],
+.contenedor-crear-categorias input[type="email"],
+.contenedor-crear-categorias textarea {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+.contenedor-crear-categorias input[type="text"]:focus,
+.contenedor-crear-categorias input[type="email"],
+.contenedor-crear-categorias textarea:focus {
+  outline: none;
+}
+
+.contenedor-crear-categorias input[type="file"] {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+/*FIN FORM*/
+
+.contenedor-imagenes-categorias {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-card-categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 200px);
+  gap: 15px;
+  flex: wrap;
+  width: 100%;
+}
+
+.contenedor-card-categorias button {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;  
+  color: white;
+  border-radius: 50px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.contenedor-card-categorias img {
+  width: 100%;
+  object-fit: cover;
+}

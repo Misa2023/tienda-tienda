@@ -1,0 +1,107 @@
+.grid-perfil-cliente {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "grid-perfil-cliente-datos grid-perfil-cliente-foto";
+}
+
+.grid-perfil-cliente-datos {
+  grid-area: grid-perfil-cliente-datos;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.grid-perfil-cliente-foto {
+  grid-area: grid-perfil-cliente-foto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.grid-perfil-cliente-datos form {
+  margin-bottom: 10px;
+}
+
+.grid-perfil-cliente-datos form h4 {
+  margin-top: 10px;
+}
+.grid-perfil-cliente-datos form p {
+  font-size: 12px;
+  color: red;
+}
+
+.grid-perfil-cliente-datos input[type="text"],
+.grid-perfil-cliente-datos input[type="email"],
+.grid-perfil-cliente-datos input[type="date"],
+.grid-perfil-cliente-datos input[type="tel"],
+.grid-perfil-cliente-datos select {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+.grid-perfil-cliente-datos input[type="text"]:focus,
+.grid-perfil-cliente-datos input[type="email"],
+.grid-perfil-cliente-datos select:focus {
+  outline: none;
+}
+
+.grid-perfil-cliente-datos input[type="file"] {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+
+.grid-perfil-cliente-imagen {
+  width: 250px;
+  height: 250px;
+  margin-top: 8px;
+}
+
+.grid-perfil-cliente-imagen img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid-perfil-cliente-imagen button {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  color: white;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-perfil-cliente-imagen input[type="file"] {
+  display: block;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 100%;
+  border: solid 1px #e4e4e4;
+}
+
+@media screen and (max-width: 750px) {
+  .grid-perfil-cliente {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "grid-perfil-cliente-datos" "grid-perfil-cliente-foto";
+  }
+
+  .grid-perfil-cliente-foto {
+    margin-top: 10px;
+    padding: 0px 0px;
+  }
+}

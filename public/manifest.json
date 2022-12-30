@@ -1,0 +1,25 @@
+{
+  "short_name": "Logan | Mochilas",
+  "name": "Corporación Logan ofrece lo mejor en mochilas, maletines, canguros, cartucheras.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "iconoLogan.png",
+      "type": "image/png",
+      "sizes": "46x47"
+    },
+    {
+      "src": "logoLogan.png",
+      "type": "image/png",
+      "sizes": "172x47"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "red",
+  "background_color": "white"
+}

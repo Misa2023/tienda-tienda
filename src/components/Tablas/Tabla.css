@@ -1,0 +1,96 @@
+/*INICIO TITULO*/
+
+/*FIN TITULO*/
+
+.contenedor-tabla-controles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.tabla-categorias-controles {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tabla-categorias-controles li {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tabla-categorias-controles button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tabla-categorias-controles li.active {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+
+.tabla-categorias-controles li:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/** TABLA **/
+.tabla-categorias {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla-categorias tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tabla-categorias th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: red;
+  color: white;
+}
+
+.tabla-categorias td,
+.tabla-categorias th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tabla-categorias td .imagen-tabla {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.tabla-categorias td button {
+  padding: 5px;
+  margin: 0 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+  .tabla-categorias td .imagen-tabla {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+

@@ -1,0 +1,9 @@
+.contenedor-cliente-direcciones {
+  width: 60%;
+}
+
+@media screen and (max-width: 780px) {
+  .contenedor-cliente-direcciones {
+    width: 100%;
+  }
+}
